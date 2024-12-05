@@ -1,4 +1,5 @@
-export default function Product({ product }) {
+export default function Product(props) {
+    const product = props.product
     return (
         <div className="w-1/4 p-5 border border-gray-300 rounded-lg shadow-lg">
             <img src={product.thumbnail} alt={product.name} />
