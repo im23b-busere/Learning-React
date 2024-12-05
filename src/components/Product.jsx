@@ -1,10 +1,10 @@
-export default function Product(props) {
+export default function Product({ product }) {
     return (
-        <div>
-            <img src={props.link} alt="Product"/>
-            <h2>{props.name}</h2>
-            <p className="color-prop text-gray-500">{props.color}</p>
-            <p className="price-prop font-bold">{props.price}</p>
+        <div className="w-1/4 p-5 border border-gray-300 rounded-lg shadow-lg">
+            <img src={product.thumbnail} alt={product.name} />
+            <h2 className="font-bold">{product.title}</h2>
+            <p className="text-gray-500">{product.description}</p>
+            <p className="font-bold">{product.price}</p>
         </div>
     );
 }
