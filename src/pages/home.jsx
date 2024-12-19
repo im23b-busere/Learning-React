@@ -1,8 +1,12 @@
+import {Link} from "react-router-dom";
+import BaseLayout from "../layout/Base";
+
 export default function Home() {
   return (
     <>
-        <h1 className="text-4xl font-bold p-5">Home</h1>
-
+        <BaseLayout>
+            <h1 className="text-4xl font-bold p-10">Home</h1>
+        </BaseLayout>
     </>
   );
 }
